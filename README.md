@@ -11,3 +11,9 @@ Repositório para a terceira edição da Next Level Week!!!
    - Botão de adicionar na page principal levando a page de cadastro
    - Criada a page de cadastro, com diversas validações em JS
    - Terminado o front-end
+4. Dia 4 -
+   - Refeitos os diretórios para instalação do node.js e template engine hbs
+   - Configurado o server.js e criadas as rotas principais com seus determinados métodos
+   - Modificado os .hbs para a utilização da template engines
+   - Criada um arquivo de fakedata para população de dados simulando um DB.
+   - Atualizado os scripts de frontend de criação do mapa da pagina principal para utilizar dos dados do banco falso.
