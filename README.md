@@ -22,4 +22,4 @@ Repositório para a terceira edição da Next Level Week!!!
    - Pages.js atualizado para criação e leitura dos dados salvos no sqlite
    - Concluido o projeto!!
 
-## Mais um projeto fenomenal promovido pela https://rocketseat.com.br
+## Mais um projeto fenomenal promovido pela [RocketSeat](https://rocketseat.com.br)
