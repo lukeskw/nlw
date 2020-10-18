@@ -5,15 +5,19 @@ const options = {
     scrollWheelZoom: false,
     zoomControl: false,
 }
+
+const lat = document.querySelector('span[data-lat]').dataset.lat
+const lng = document.querySelector('span[data-lng]').dataset.lng
+
 //criando mapa
-const map = L.map("mapid", options).setView([-22.5164655, -43.9987692], 17);
+const map = L.map("mapid", options).setView([lat, lng], 16);
 
 //criando tileLayer
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
 
 //criando icone
 const icon = L.icon({
-  iconUrl: "../public/images/map-marker.svg",
+  iconUrl: "../images/map-marker.svg",
   iconSize: [58, 68],
   iconAnchor: [29, 68],
   popupAnchor: [170, 2],
@@ -21,7 +25,7 @@ const icon = L.icon({
 
 
 //criando marker
-L.marker([-22.5164655, -43.9987692], { icon }).addTo(map)
+L.marker([lat, lng], { icon }).addTo(map)
 
 /* galeria de imagens*/
 

@@ -50,14 +50,14 @@
       </aside>
 
       <main class="animate-appear with-sidebar">
-        <form action="">
+        <form action="save-orphanage" method="POST" onsubmit="validate(event)">
           <fieldset>
             <legend>Dados</legend>
 
             <div class="map-container">
               <div id="mapid"></div>
-              <input type="hidden" name="lat" />
-              <input type="hidden" name="lng" />
+              <input type="hidden" name="lat" class="input-lat" />
+              <input type="hidden" name="lng" class="input-lng" />
 
               <footer>
                 <a href="#" id="select-point"
@@ -91,6 +91,7 @@
                     name="images"
                     placeholder="Cole o link da foto aqui"
                     required
+                    type="url"
                   />
                   <span onClick="deleteField(event)"
                     ><img
@@ -118,16 +119,16 @@
             </div>
 
             <div class="input-block">
-              <label for="opening-hours">Horário de visitas</label>
-              <input id="opening-hours" name="opening-hours" required />
+              <label for="opening_hours">Horário de visitas</label>
+              <input id="opening_hours" name="opening_hours" required />
             </div>
 
             <div class="input-block">
-              <label for="open-weekends">Atende fins de semana?</label>
+              <label for="open_weekends">Atende fins de semana?</label>
               <input
                 type="hidden"
-                id="open-weekends"
-                name="open-weekends"
+                id="open_weekends"
+                name="open_weekends"
                 value="1"
                 required
               />

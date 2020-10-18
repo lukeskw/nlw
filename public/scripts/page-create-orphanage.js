@@ -6,7 +6,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
 
 //criando icone
 const icon = L.icon({
-  iconUrl: "../public/images/map-marker.svg",
+  iconUrl: "../images/map-marker.svg",
   iconSize: [58, 68],
   iconAnchor: [29, 68],
 });
@@ -86,6 +86,19 @@ function toggleSelect(event){
         const button = event.currentTarget
         button.classList.add('active')
     //atualizar o input hidden com o valor
-        const input = document.querySelector('[name="open-weekends"]')
+        const input = document.querySelector('[name="open_weekends"]')
         input.value = button.dataset.value
+}
+
+function validate(event){
+    //validar se lat e lng estão preenchidos
+
+    const lat = document.querySelector('.input-lat')
+    const lng = document.querySelector('.input-lng')
+    console.log(lat)
+    console.log(lng)
+      if(!lat.value && !lng.value){//lat or lng n preenchido
+     event.preventDefault()
+     alert('Selecione a localização')
+ }
 }

@@ -17,3 +17,9 @@ Repositório para a terceira edição da Next Level Week!!!
    - Modificado os .hbs para a utilização da template engines
    - Criada um arquivo de fakedata para população de dados simulando um DB.
    - Atualizado os scripts de frontend de criação do mapa da pagina principal para utilizar dos dados do banco falso.
+5. Dia 5 -
+   - Conexão com SQLite configurada, junto aos objetos de conexão.
+   - Pages.js atualizado para criação e leitura dos dados salvos no sqlite
+   - Concluido o projeto!!
+
+## Mais um projeto fenomenal promovido pela https://rocketseat.com.br

@@ -13,6 +13,8 @@ const server = express()
 //usando arquivos estaticos
 server.use(express.static('public'))
 
+//utilizar body do req
+server.use(express.urlencoded({ extended: true }))
 
 //configurando template engine
 server.set('views', path.join(__dirname, "views")) .set('view engine', 'hbs')
@@ -22,6 +24,7 @@ server.get('/', pages.index)
 server.get('/orphanage', pages.orphanage)
 server.get('/orphanages', pages.orphanages)
 server.get('/create-orphanage', pages.createOrphanage)
+server.post('/save-orphanage', pages.saveOrphanage)
 
 // ligando o server
 server.listen(5500)
